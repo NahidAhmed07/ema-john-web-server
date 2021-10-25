@@ -66,6 +66,12 @@ app.get("/", (req, res) => {
   res.send("ema-john server response");
 });
 
+const person = {
+  name: "nahid ahmed",
+  email: "mdnahidahmed2003@gmail.com",
+  adde: "pabna",
+};
+
 app.listen(port, () => {
   console.log("Ema-john server listening on port:", port);
 });
