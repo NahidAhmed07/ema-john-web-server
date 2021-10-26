@@ -63,7 +63,7 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("ema-john server response");
+  res.send("ema-john server response ami nahid hasan moman");
 });
 
 const person = {
@@ -71,6 +71,10 @@ const person = {
   email: "mdnahidahmed2003@gmail.com",
   adde: "pabna",
 };
+
+app.get("/person", (req, res) => {
+  res.send(JSON.stringify(person));
+});
 
 app.listen(port, () => {
   console.log("Ema-john server listening on port:", port);
